@@ -1,0 +1,26 @@
+==================================================
+              ISRAA MOSTAFA - PORTFOLIO DATA
+==================================================
+
+1. PERSONAL & CONTACT DETAILS:
+--------------------------------------------------
+- Name: Israa Mostafa
+- Title: Flutter & Mobile Application Developer
+- Email: israaamustafa1@gmail.com
+- WhatsApp Direct: https://wa.me/201019151724
+- LinkedIn: https://www.linkedin.com/in/israa-mustafa
+- GitHub Profile: https://github.com/israaamustafa1
+
+2. FEATURED PROJECTS (GITHUB REPOSITORIES):
+--------------------------------------------------
+- Facebook Clone: https://github.com/israaamustafa1/facebook-clone
+- Basketball Counter: https://github.com/israaamustafa1/basketball-counter
+
+3. LOCAL ASSETS & MEDIA PATHS:
+--------------------------------------------------
+- Profile Picture: assets/images/profile.jpg
+- Resume / CV: assets/cv.pdf
+- Facebook App Demo Video: assets/videos/facebook_demo.mp4
+- Basketball App Demo Video: assets/videos/basketball_demo.mp4
+- Certificates Folder: assets/certificates/
+==================================================

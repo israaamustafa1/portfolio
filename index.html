@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><script>(function(){try{var t=localStorage.getItem("theme");if(t==="dark"||(!t&&window.matchMedia("(prefers-color-scheme: dark)").matches)){document.documentElement.classList.add("dark");}}catch(e){}})();</script><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="css/style.css" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface":"rgb(var(--color-surface) / <alpha-value>)","surface-dim":"rgb(var(--color-surface-dim) / <alpha-value>)","surface-bright":"rgb(var(--color-surface-bright) / <alpha-value>)","surface-container-lowest":"rgb(var(--color-surface-container-lowest) / <alpha-value>)","surface-container-low":"rgb(var(--color-surface-container-low) / <alpha-value>)","surface-container":"rgb(var(--color-surface-container) / <alpha-value>)","surface-container-high":"rgb(var(--color-surface-container-high) / <alpha-value>)","surface-container-highest":"rgb(var(--color-surface-container-highest) / <alpha-value>)","on-surface":"rgb(var(--color-on-surface) / <alpha-value>)","on-surface-variant":"rgb(var(--color-on-surface-variant) / <alpha-value>)","inverse-surface":"rgb(var(--color-inverse-surface) / <alpha-value>)","inverse-on-surface":"rgb(var(--color-inverse-on-surface) / <alpha-value>)","outline":"rgb(var(--color-outline) / <alpha-value>)","outline-variant":"rgb(var(--color-outline-variant) / <alpha-value>)","surface-tint":"rgb(var(--color-surface-tint) / <alpha-value>)","primary":"rgb(var(--color-primary) / <alpha-value>)","on-primary":"rgb(var(--color-on-primary) / <alpha-value>)","primary-container":"rgb(var(--color-primary-container) / <alpha-value>)","on-primary-container":"rgb(var(--color-on-primary-container) / <alpha-value>)","inverse-primary":"rgb(var(--color-inverse-primary) / <alpha-value>)","secondary":"rgb(var(--color-secondary) / <alpha-value>)","on-secondary":"rgb(var(--color-on-secondary) / <alpha-value>)","secondary-container":"rgb(var(--color-secondary-container) / <alpha-value>)","on-secondary-container":"rgb(var(--color-on-secondary-container) / <alpha-value>)","tertiary":"rgb(var(--color-tertiary) / <alpha-value>)","on-tertiary":"rgb(var(--color-on-tertiary) / <alpha-value>)","tertiary-container":"rgb(var(--color-tertiary-container) / <alpha-value>)","on-tertiary-container":"rgb(var(--color-on-tertiary-container) / <alpha-value>)","error":"rgb(var(--color-error) / <alpha-value>)","on-error":"rgb(var(--color-on-error) / <alpha-value>)","error-container":"rgb(var(--color-error-container) / <alpha-value>)","on-error-container":"rgb(var(--color-on-error-container) / <alpha-value>)","primary-fixed":"rgb(var(--color-primary-fixed) / <alpha-value>)","primary-fixed-dim":"rgb(var(--color-primary-fixed-dim) / <alpha-value>)","on-primary-fixed":"rgb(var(--color-on-primary-fixed) / <alpha-value>)","on-primary-fixed-variant":"rgb(var(--color-on-primary-fixed-variant) / <alpha-value>)","secondary-fixed":"rgb(var(--color-secondary-fixed) / <alpha-value>)","secondary-fixed-dim":"rgb(var(--color-secondary-fixed-dim) / <alpha-value>)","on-secondary-fixed":"rgb(var(--color-on-secondary-fixed) / <alpha-value>)","on-secondary-fixed-variant":"rgb(var(--color-on-secondary-fixed-variant) / <alpha-value>)","tertiary-fixed":"rgb(var(--color-tertiary-fixed) / <alpha-value>)","tertiary-fixed-dim":"rgb(var(--color-tertiary-fixed-dim) / <alpha-value>)","on-tertiary-fixed":"rgb(var(--color-on-tertiary-fixed) / <alpha-value>)","on-tertiary-fixed-variant":"rgb(var(--color-on-tertiary-fixed-variant) / <alpha-value>)","background":"rgb(var(--color-background) / <alpha-value>)","on-background":"rgb(var(--color-on-background) / <alpha-value>)","surface-variant":"rgb(var(--color-surface-variant) / <alpha-value>)"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","space-2xl":"4rem","margin-mobile":"1.25rem","gutter":"1.5rem","space-xs":"0.25rem","space-sm":"0.5rem","gutter-mobile":"1rem","space-xl":"2.5rem","margin":"3rem","space-md":"1rem"},"fontFamily":{"display-hero":["Plus Jakarta Sans"],"body-md":["Inter"],"display-hero-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"code-snippet":["JetBrains Mono"],"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"]},"fontSize":{"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"display-hero-mobile":["36px",{"lineHeight":"42px","letterSpacing":"-0.025em","fontWeight":"800"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-lg-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}],"code-snippet":["13px",{"lineHeight":"22px","fontWeight":"500"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1200px] mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><a class="group flex items-center gap-space-sm" data-path="about" href="#"><div class="w-9 h-9 rounded-xl bg-primary-container/10 flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-all duration-300 shadow-[0_2px_8px_rgba(1,117,194,0.12)]"><span class="font-code-snippet text-code-snippet font-bold tracking-tighter">&lt;/&gt;</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface group-hover:text-primary transition-colors">Israa Mostafa</span><div class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Flutter Architect</span></div></div></a></div><nav class="hidden lg:flex items-center p-1.5 rounded-full bg-surface-container-low/70 shadow-[0_2px_12px_rgba(15,23,42,0.03)] backdrop-blur-md" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full"><a aria-current="page" class="px-space-md py-1.5 transition-all duration-200 bg-primary-container text-on-primary-container font-semibold rounded-full" data-path="about" href="#about">About</a><a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-200" data-path="skills" href="#skills">Skills</a><a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-200" data-path="projects" href="#projects">Projects</a><a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-200" data-path="certifications" href="#certifications">Certifications</a><a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-200" data-path="contact" href="#contact">Contact</a></nav><div class="flex items-center gap-space-sm"><div class="flex items-center p-1 rounded-full bg-surface-container-low shadow-[0_2px_8px_rgba(15,23,42,0.04)]" title="Appearance Mode"><button aria-label="Light Mode Active" class="w-8 h-8 rounded-full bg-surface-container-lowest text-primary shadow-[0_2px_6px_rgba(0,0,0,0.06)] flex items-center justify-center transition-all" id="theme-toggle-light" type="button"><span class="material-symbols-outlined text-[18px]">light_mode</span></button><button aria-label="Switch to Dark Mode" class="w-8 h-8 rounded-full text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" id="theme-toggle-dark" type="button"><span class="material-symbols-outlined text-[18px]">dark_mode</span></button></div><a class="hidden sm:inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-[0_8px_20px_rgba(1,117,194,0.3)] hover:bg-primary transition-all duration-200" download="Israa_Mostafa_CV.pdf" href="assets/cv.pdf"><span class="material-symbols-outlined text-[18px]">download</span><span>Download CV</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_2px_8px_rgba(0,92,154,0.25)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-200px)]"><div class="flex flex-col w-full">
+<!-- Subtle decorative ambient glow backdrops -->
+<div class="relative w-full max-w-[1200px] mx-auto px-gutter overflow-hidden">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-b from-primary-fixed/30 via-tertiary-fixed/15 to-transparent blur-3xl pointer-events-none -z-10 rounded-full"></div>
+<div class="absolute top-96 -right-20 w-[450px] h-[450px] bg-surface-container-high/60 blur-3xl pointer-events-none -z-10 rounded-full"></div>
+<!-- 1. HERO SECTION -->
+<section class="relative pt-space-xl pb-space-2xl flex flex-col items-center">
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Text Narrative (Col 1-7) -->
+<div class="lg:col-span-7 min-w-0 flex flex-col items-start gap-space-md">
+<!-- Availability Tag -->
+<div class="inline-flex items-center gap-2 px-space-md py-1.5 rounded-full bg-surface-container-lowest shadow-sm border-0">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary-container"></span>
+</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Available for hire &amp; freelance projects</span>
+</div>
+<!-- Hero Name & Title -->
+<div class="flex flex-col gap-space-xs">
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight">
+              Israa <span class="text-primary-container bg-gradient-to-r from-primary-container via-primary to-tertiary bg-clip-text text-transparent">Mostafa</span>
+</h1>
+<p class="font-headline-md text-headline-md text-primary font-semibold tracking-tight">
+              Mobile Application Developer <span class="text-on-surface-variant font-normal">(Flutter &amp; Dart)</span>
+</p>
+</div>
+<!-- USP Tagline -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+  Flutter Developer with a solid Computer Science foundation, specialized in building scalable cross-platform apps with Clean Architecture, fluid UIs, and efficient problem-solving.
+</p>
+<!-- Action CTA Group -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<a class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-[0_8px_20px_rgba(1,117,194,0.28)] hover:bg-primary hover:shadow-[0_12px_28px_rgba(1,117,194,0.36)] transition-all duration-300 transform hover:-translate-y-0.5" href="#projects">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>View My Projects</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+<a class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high transition-all duration-200" href="#contact">
+<span class="material-symbols-outlined text-[18px]">chat_bubble_outline</span>
+<span>Get In Touch</span>
+</a>
+<a class="inline-flex items-center gap-2 px-5 py-3.5 rounded-full bg-[#25D366]/10 hover:bg-[#25D366]/20 text-[#128C7E] font-label-md text-label-md transition-all duration-200 shadow-sm" href="https://wa.me/201019151724" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24">
+<path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.993.589 1.782.915 2.796.915 3.179 0 5.767-2.587 5.767-5.766.001-3.187-2.575-5.77-5.767-5.77zm6.958 5.766c-.001 3.834-3.125 6.958-6.958 6.958-1.198 0-2.34-.318-3.344-.881l-3.722.976.993-3.626c-.637-1.042-.995-2.253-.995-3.427.001-3.833 3.126-6.957 6.958-6.957 3.832 0 6.968 3.124 6.968 6.957z"></path>
+</svg>
+<span>Chat on WhatsApp</span>
+</a>
+</div>
+<!-- Quick Metrics Bar -->
+<div class="grid grid-cols-3 gap-space-md w-full pt-space-md max-w-lg">
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container-lowest shadow-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">50+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Algo Problems</span>
+</div>
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container-lowest shadow-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">60 FPS</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Smooth Renders</span>
+</div>
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container-lowest shadow-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Declarative UI</span>
+</div>
+</div>
+</div>
+<!-- Right Profile Visual Container (Col 8-12) -->
+<div class="lg:col-span-5 min-w-0 flex items-center justify-center relative">
+<!-- Outer circular ambient ring -->
+<div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-80 lg:h-80 xl:w-96 xl:h-96 flex items-center justify-center">
+<div class="absolute inset-0 rounded-full bg-gradient-to-tr from-primary-fixed via-surface-container-high to-tertiary-fixed opacity-70 animate-pulse"></div>
+<div class="absolute inset-2 rounded-full bg-surface-container-lowest shadow-xl flex items-center justify-center p-3">
+<!-- Developer Avatar Silhouette Container -->
+<div class="w-full h-full rounded-full bg-gradient-to-b from-surface-container-low to-surface-container flex flex-col items-center justify-center overflow-hidden relative">
+<svg class="w-40 h-40 text-primary/30" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20z"></path>
+</svg>
+<div class="absolute bottom-6 flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold tracking-wide">Israa Mostafa</span>
+</div>
+</div>
+</div>
+<!-- Floating Tech Badges -->
+<!-- Badge 1: Flutter -->
+<div class="absolute -top-3 left-4 flex items-center gap-2 px-3 py-2 rounded-2xl bg-surface-container-lowest shadow-[0_8px_20px_rgba(1,117,194,0.15)] hover:scale-105 transition-transform duration-200">
+<div class="w-6 h-6 rounded-lg bg-[#02569B]/10 flex items-center justify-center text-primary-container">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M14.314 0L2.3 12 6 15.7 21.684 0h-7.37zm-.028 10.98L7.672 17.6 14.286 24h7.371l-6.614-6.4 6.614-6.62h-7.371z"></path></svg>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Flutter 3.x</span>
+</div>
+<!-- Badge 2: Dart -->
+<div class="absolute top-1/3 -right-6 flex items-center gap-2 px-3 py-2 rounded-2xl bg-surface-container-lowest shadow-[0_8px_20px_rgba(1,117,194,0.15)] hover:scale-105 transition-transform duration-200">
+<div class="w-6 h-6 rounded-lg bg-tertiary-container/10 flex items-center justify-center text-tertiary">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M4.105 4.105l8.132-3.155 7.658 3.155 3.155 8.132-3.155 7.658-7.658 3.155-8.132-3.155-3.155-7.658z"></path></svg>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Dart Core</span>
+</div>
+<!-- Badge 3: Clean Architecture -->
+<div class="absolute -bottom-4 left-6 flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-surface-container-lowest shadow-[0_8px_20px_rgba(1,117,194,0.15)] hover:scale-105 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary text-[18px]">layers</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Clean Architecture</span>
+</div>
+<!-- Badge 4: 60 FPS Fluid UI -->
+<div class="absolute top-2/3 -left-8 hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-2xl bg-surface-container-lowest shadow-[0_8px_20px_rgba(1,117,194,0.12)]">
+<span class="material-symbols-outlined text-tertiary text-[16px]">speed</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">60 FPS Fluid UI</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. ABOUT ME SECTION (#about) -->
+<section class="w-full py-space-2xl scroll-mt-20" id="about">
+<div class="flex flex-col gap-space-lg">
+<!-- Section Header -->
+<div class="flex flex-col items-start gap-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">The Story &amp; Mindset</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">About Me</h2>
+</div>
+<!-- Main Narrative Card Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Text Story Panel -->
+<div class="lg:col-span-8 p-space-xl rounded-3xl bg-surface-container-lowest shadow-[0_4px_24px_rgba(15,23,42,0.04)] flex flex-col justify-between gap-space-md relative overflow-hidden">
+<div class="absolute -right-12 -bottom-12 w-64 h-64 bg-surface-container-high/40 rounded-full blur-2xl pointer-events-none"></div>
+<div class="space-y-4 relative z-10">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                My journey into technology began with a deep curiosity for how digital ideas come to life from line one of code. Starting with low-level logic, algorithms, and solving over 50 competitive C++ problems, I built a bulletproof problem-solving mindset.
+              </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                But everything truly clicked when I discovered Flutter—where code seamlessly transforms into fluid, beautiful mobile experiences. Through intensive hands-on tracks with ITI and DEPI, I mastered mobile engineering, Clean Architecture, and seamless API integrations.
+              </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Today, as a Computer Science student at Nahda University, I don't just build apps that look stunning; I design scalable, performance-driven mobile solutions infused with modern AI capabilities—driven by an absolute passion to shape the future of mobile tech.
+              </p>
+</div>
+<!-- Architectural Principles Sub-row -->
+<div class="pt-space-md flex flex-wrap items-center gap-space-xs relative z-10">
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-code-snippet text-code-snippet">OOP Principles</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-code-snippet text-code-snippet">BLoC / Cubit</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-code-snippet text-code-snippet">RESTful APIs</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-code-snippet text-code-snippet">Git Versioning</span>
+</div>
+</div>
+<!-- Milestones & Education Panel -->
+<div class="lg:col-span-4 flex flex-col gap-space-sm justify-between">
+<!-- Milestone 1 -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed/50 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">50+ Problems</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Competitive C++ Problem Solving on Online Judges</span>
+</div>
+</div>
+<!-- Milestone 2 -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed/50 flex items-center justify-center text-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">ITI &amp; DEPI Track</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rigorous mobile development graduate &amp; trainee</span>
+</div>
+</div>
+<!-- Milestone 3: Education -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">B.Sc. Computer Science</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Nahda University (NUB)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Final Year Student &middot; Expected Graduation 2027</span>
+<span class="inline-flex items-center w-fit gap-1.5 mt-1 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">Cumulative GPA: 3.86 / 4.00</span>
+</div>
+</div>
+<!-- Milestone 4 -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed/60 flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">architecture</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Clean Arch &amp; BLoC</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Solid separation of layers, entities, and states</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. TECHNICAL SKILLS SECTION (#skills) -->
+<section class="w-full py-space-2xl scroll-mt-20" id="skills">
+<div class="flex flex-col gap-space-lg">
+<!-- Section Header -->
+<div class="flex flex-col items-start gap-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Technical Expertise</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Skills &amp; Capabilities</h2>
+</div>
+<!-- 4-Card Skills Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1: Mobile Development -->
+<div class="p-space-lg rounded-3xl bg-surface-container-lowest shadow-[0_4px_20px_rgba(15,23,42,0.04)] flex flex-col justify-between hover:shadow-[0_8px_30px_rgba(1,117,194,0.08)] transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-primary-container/10 flex items-center justify-center text-primary-container mb-space-md">
+<span class="material-symbols-outlined text-[26px]">smartphone</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Mobile Development</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Engineering reactive, responsive, and platform-adaptive client applications.</p>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>Flutter
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>Dart
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>REST APIs
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>State Basics
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>UI/UX Implement
+              </span>
+</div>
+</div>
+<!-- Card 2: Programming Languages -->
+<div class="p-space-lg rounded-3xl bg-surface-container-lowest shadow-[0_4px_20px_rgba(15,23,42,0.04)] flex flex-col justify-between hover:shadow-[0_8px_30px_rgba(1,117,194,0.08)] transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-tertiary-container/10 flex items-center justify-center text-tertiary-container mb-space-md">
+<span class="material-symbols-outlined text-[26px]">code</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Languages</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Fundamental languages for algorithmic computation and app development.</p>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Dart
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>C++
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Python
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>SQL
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>HTML &amp; CSS
+              </span>
+</div>
+</div>
+<!-- Card 3: CS Fundamentals -->
+<div class="p-space-lg rounded-3xl bg-surface-container-lowest shadow-[0_4px_20px_rgba(15,23,42,0.04)] flex flex-col justify-between hover:shadow-[0_8px_30px_rgba(1,117,194,0.08)] transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-secondary-container/20 flex items-center justify-center text-secondary mb-space-md">
+<span class="material-symbols-outlined text-[26px]">account_tree</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">CS Fundamentals</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Core theoretical engineering discipline powering maintainable codebases.</p>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Data Structures
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Algorithms
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>OOP
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Clean Arch
+              </span>
+</div>
+</div>
+<!-- Card 4: Developer Tools -->
+<div class="p-space-lg rounded-3xl bg-surface-container-lowest shadow-[0_4px_20px_rgba(15,23,42,0.04)] flex flex-col justify-between hover:shadow-[0_8px_30px_rgba(1,117,194,0.08)] transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center text-on-surface mb-space-md">
+<span class="material-symbols-outlined text-[26px]">construction</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Developer Tools</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Collaborative version control, prototyping, and cloud integration suites.</p>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>Git
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>GitHub
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>VS Code
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>Firebase
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>Figma
+              </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. FEATURED PROJECTS SECTION (#projects) -->
+<section class="w-full py-space-2xl scroll-mt-20" id="projects">
+<div class="flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col items-start gap-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Practical Deployments</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Featured Projects</h2>
+</div>
+<!-- Project 1: Facebook Clone App -->
+<div class="p-space-lg md:p-space-xl rounded-3xl bg-surface-container-lowest shadow-[0_4px_28px_rgba(15,23,42,0.05)] grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Realistic Smartphone Device Frame (Col 1-5) -->
+<div class="lg:col-span-5 flex justify-center">
+<div class="w-[270px] sm:w-[300px] h-[580px] bg-slate-900 rounded-[48px] p-3 shadow-[0_24px_48px_-12px_rgba(1,117,194,0.25)] ring-1 ring-slate-800 relative flex flex-col justify-between overflow-hidden">
+<!-- Phone Inner Screen -->
+<div class="w-full h-full bg-white rounded-[38px] overflow-hidden flex flex-col relative">
+<!-- Dynamic Island / Top Notch -->
+<div class="w-full pt-3 px-6 pb-2 flex items-center justify-between bg-surface-container-lowest z-20">
+<span class="font-code-snippet text-[11px] font-semibold text-slate-800">9:41</span>
+<div class="w-20 h-4 bg-slate-900 rounded-full flex items-center justify-end px-2">
+<span class="w-2 h-2 rounded-full bg-slate-700"></span>
+</div>
+<div class="flex items-center gap-1 text-slate-800">
+<span class="material-symbols-outlined text-[13px]">signal_cellular_alt</span>
+<span class="material-symbols-outlined text-[13px]">wifi</span>
+<span class="material-symbols-outlined text-[13px]">battery_full</span>
+</div>
+</div>
+<!-- Simulated App Bar: Facebook -->
+<div class="px-4 py-2.5 bg-surface-container-lowest flex items-center justify-between shadow-sm z-10">
+<span class="font-headline-sm text-headline-sm text-primary font-extrabold tracking-tight">facebook</span>
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-full bg-surface-container-low flex items-center justify-center text-slate-700">
+<span class="material-symbols-outlined text-[16px]">search</span>
+</span>
+<span class="w-7 h-7 rounded-full bg-surface-container-low flex items-center justify-center text-slate-700">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</span>
+</div>
+</div>
+<!-- App Navigation Tabs -->
+<div class="flex items-center justify-around py-1.5 bg-surface-container-lowest shadow-sm z-10">
+<span class="material-symbols-outlined text-primary text-[20px]">home</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">ondemand_video</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">storefront</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">group</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">notifications</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">menu</span>
+</div>
+<!-- Feed Content Mockup / Video Frame -->
+<div class="flex-1 bg-surface-container-low p-3 space-y-3 overflow-y-auto">
+<!-- Story Row -->
+<div class="flex gap-2 overflow-x-hidden">
+<div class="w-20 h-28 rounded-xl bg-surface-container-high flex flex-col justify-end p-1.5 relative overflow-hidden flex-shrink-0 shadow-sm">
+<div class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center absolute top-1 left-1">
+<span class="material-symbols-outlined text-[14px]">add</span>
+</div>
+<span class="text-[9px] font-semibold text-slate-700">Add Story</span>
+</div>
+<div class="w-20 h-28 rounded-xl bg-primary-fixed flex flex-col justify-end p-1.5 relative overflow-hidden flex-shrink-0 shadow-sm">
+<span class="text-[9px] font-semibold text-on-primary-fixed">Sara A.</span>
+</div>
+<div class="w-20 h-28 rounded-xl bg-secondary-fixed flex flex-col justify-end p-1.5 relative overflow-hidden flex-shrink-0 shadow-sm">
+<span class="text-[9px] font-semibold text-on-secondary-fixed">Omar M.</span>
+</div>
+</div>
+<!-- Post Card Mockup -->
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm space-y-2">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary/20 flex items-center justify-center text-primary text-[10px] font-bold">IM</div>
+<div class="flex flex-col">
+<span class="text-[11px] font-bold text-slate-800">Israa Mostafa</span>
+<span class="text-[9px] text-slate-500">2 hrs · Flutter Dev</span>
+</div>
+</div>
+<p class="text-[11px] text-slate-700 leading-tight">Built a custom feed with seamless scrolling performance and custom responsive tabs!</p>
+<div class="w-full h-24 rounded-lg bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary/40 text-[32px]">image</span>
+</div>
+</div>
+</div>
+<!-- Bottom Home Bar Indicator -->
+<div class="w-full py-1.5 flex justify-center bg-surface-container-lowest">
+<div class="w-28 h-1 bg-slate-400 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Project Details (Col 6-12) -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-md">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-fixed/40 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">layers</span>
+              Social Experience Architecture
+            </div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Facebook Clone App</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+              Responsive mobile UI/UX cloning core social features, custom navigation, and state management logic. Engineered with modular widget breakdowns to mirror real-world mobile feed performance, responsive tab navigation, and reactive stories carousel.
+            </p>
+<!-- Tech Badges -->
+<div class="flex flex-wrap gap-2 pt-space-xs">
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-medium">Flutter</span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-medium">Dart</span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-medium">UI/UX</span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-medium">State Management</span>
+</div>
+<!-- Architectural Takeaways -->
+<div class="w-full grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Dynamic Feed Rendering</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Custom Navigation Stack</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-sm">
+<a class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-surface-container-highest hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors" href="https://github.com/israaamustafa1/facebook-clone" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+<span>GitHub Code</span>
+</a>
+<button class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary transition-all js-watch-demo" data-video-src="assets/videos/facebook_demo.mp4" data-video-title="Facebook Clone App — Demo" type="button">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+<span>Watch Demo</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Project 2: Basketball Points Counter App -->
+<div class="p-space-lg md:p-space-xl rounded-3xl bg-surface-container-lowest shadow-[0_4px_28px_rgba(15,23,42,0.05)] grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Realistic Smartphone Device Frame (Col 1-5) -->
+<div class="lg:col-span-5 flex justify-center order-first lg:order-last">
+<div class="w-[270px] sm:w-[300px] h-[580px] bg-slate-900 rounded-[48px] p-3 shadow-[0_24px_48px_-12px_rgba(25,96,165,0.22)] ring-1 ring-slate-800 relative flex flex-col justify-between overflow-hidden">
+<!-- Phone Inner Screen -->
+<div class="w-full h-full bg-[#FAFAFA] rounded-[38px] overflow-hidden flex flex-col relative">
+<!-- Status Bar -->
+<div class="w-full pt-3 px-6 pb-2 flex items-center justify-between bg-[#FAFAFA] z-20">
+<span class="font-code-snippet text-[11px] font-semibold text-slate-800">10:15</span>
+<div class="w-20 h-4 bg-slate-900 rounded-full flex items-center justify-end px-2">
+<span class="w-2 h-2 rounded-full bg-slate-700"></span>
+</div>
+<div class="flex items-center gap-1 text-slate-800">
+<span class="material-symbols-outlined text-[13px]">wifi</span>
+<span class="material-symbols-outlined text-[13px]">battery_charging_full</span>
+</div>
+</div>
+<!-- Custom App Bar: Court Counter -->
+<div class="px-4 py-3 bg-[#E65100] text-white flex items-center justify-between shadow-sm z-10">
+<span class="font-headline-sm text-[16px] font-bold tracking-tight">Court Counter</span>
+<span class="material-symbols-outlined text-[18px]">sports_basketball</span>
+</div>
+<!-- Scoreboard Split Content -->
+<div class="flex-1 p-3 flex flex-col justify-between">
+<div class="grid grid-cols-2 gap-2 mt-4">
+<!-- Team A Column -->
+<div class="flex flex-col items-center gap-2">
+<span class="font-headline-sm text-[16px] font-bold text-slate-800">Team A</span>
+<div class="w-24 h-24 rounded-2xl bg-surface-container-high flex items-center justify-center shadow-inner">
+<span class="font-display-hero text-headline-lg font-bold text-[#E65100]">38</span>
+</div>
+<div class="flex flex-col gap-1.5 w-full max-w-[110px] mt-2">
+<div class="py-1 rounded bg-[#E65100] text-white text-[11px] text-center font-bold shadow-sm">+1 POINT</div>
+<div class="py-1 rounded bg-[#E65100] text-white text-[11px] text-center font-bold shadow-sm">+2 POINTS</div>
+<div class="py-1 rounded bg-[#E65100] text-white text-[11px] text-center font-bold shadow-sm">+3 POINTS</div>
+</div>
+</div>
+<!-- Team B Column -->
+<div class="flex flex-col items-center gap-2">
+<span class="font-headline-sm text-[16px] font-bold text-slate-800">Team B</span>
+<div class="w-24 h-24 rounded-2xl bg-surface-container-high flex items-center justify-center shadow-inner">
+<span class="font-display-hero text-headline-lg font-bold text-primary">42</span>
+</div>
+<div class="flex flex-col gap-1.5 w-full max-w-[110px] mt-2">
+<div class="py-1 rounded bg-primary text-white text-[11px] text-center font-bold shadow-sm">+1 POINT</div>
+<div class="py-1 rounded bg-primary text-white text-[11px] text-center font-bold shadow-sm">+2 POINTS</div>
+<div class="py-1 rounded bg-primary text-white text-[11px] text-center font-bold shadow-sm">+3 POINTS</div>
+</div>
+</div>
+</div>
+<!-- Reset Game CTA -->
+<div class="pb-6 flex flex-col items-center">
+<div class="px-8 py-2 rounded-xl bg-slate-800 text-white font-label-md text-label-md shadow-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Reset Score</span>
+</div>
+</div>
+</div>
+<!-- Bottom Home Bar -->
+<div class="w-full py-1.5 flex justify-center bg-[#FAFAFA]">
+<div class="w-28 h-1 bg-slate-400 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Project Details (Col 6-12) -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-md">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-fixed/50 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">reorder</span>
+              Dynamic State Management App
+            </div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Basketball Points Counter App</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+              Interactive score tracking application with real-time state updates and dynamic team control logic. Developed using Flutter’s reactive UI pattern to ensure instant UI re-renders, instantaneous score manipulation, and clean state reset mechanisms without unnecessary rebuilds.
+            </p>
+<!-- Tech Badges -->
+<div class="flex flex-wrap gap-2 pt-space-xs">
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-medium">Flutter</span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-medium">Dart</span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-medium">State Management</span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-medium">Interactive Widgets</span>
+</div>
+<!-- Architectural Takeaways -->
+<div class="w-full grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">bolt</span>
+<span class="font-body-sm text-body-sm text-on-surface">Zero-lag State Rebuilds</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="font-body-sm text-body-sm text-on-surface">Intuitive Dual-team UI</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-sm">
+<a class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-surface-container-highest hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors" href="https://github.com/israaamustafa1/basketball-counter" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+<span>GitHub Code</span>
+</a>
+<button class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary transition-all js-watch-demo" data-video-src="assets/videos/basketball_demo.mp4" data-video-title="Basketball Points Counter App — Demo" type="button">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+<span>Watch Demo</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. CERTIFICATIONS & TRAINING SECTION (#certifications) -->
+<section class="w-full py-space-2xl scroll-mt-20" id="certifications">
+<div class="flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col items-start gap-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Continuous Growth</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Certifications &amp; Training</h2>
+</div>
+<!-- Experience / Trainee Badges High Impact Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- DEPI Trainee -->
+<div class="p-space-lg rounded-3xl bg-surface-container-lowest shadow-[0_4px_24px_rgba(15,23,42,0.04)] flex items-start gap-space-md">
+<div class="w-14 h-14 rounded-2xl bg-tertiary-fixed/60 flex items-center justify-center text-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">workspace_premium</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="inline-flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">Initiative Trainee</span>
+<span class="font-code-snippet text-code-snippet text-on-surface-variant">DEPI</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Mobile App Developer Trainee (Flutter Track)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Digital Egypt Pioneers Initiative (DEPI) — In-depth training on cross-platform architectures, state patterns, and production Flutter workflows.</p>
+</div>
+</div>
+<!-- ITI Intern -->
+<div class="p-space-lg rounded-3xl bg-surface-container-lowest shadow-[0_4px_24px_rgba(15,23,42,0.04)] flex items-start gap-space-md">
+<div class="w-14 h-14 rounded-2xl bg-primary-fixed/60 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">badge</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="inline-flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">Institute Intern</span>
+<span class="font-code-snippet text-code-snippet text-on-surface-variant">ITI</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Flutter Developer Intern</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Information Technology Institute (ITI) — Hands-on mobile software engineering track, team collaboration, and real-world project deliveries.</p>
+</div>
+</div>
+</div>
+<!-- Certificates Grid with Link Placeholders -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Accredited Credentials</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Cert 1 -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold">Build with AI: Masr Edition</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Google for Developers &amp; ITI</span>
+</div>
+</div>
+</div>
+<a class="inline-flex items-center justify-between text-primary font-label-md text-label-md hover:text-primary-container transition-colors pt-2" href="assets/certificates/build_with-ai.pdf" rel="noopener noreferrer" target="_blank">
+<span>View Certificate</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+<!-- Cert 2 -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">smart_toy</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold">AI for You</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Oracle &amp; DEPI</span>
+</div>
+</div>
+</div>
+<span class="inline-flex items-center justify-between text-on-surface-variant/60 font-label-md text-label-md pt-2 cursor-not-allowed" title="Certificate file not yet provided">
+<span>Certificate Pending</span>
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+</span>
+</div>
+<!-- Cert 3 -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold">Programming Advice — Course 1</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">C++, Algorithms &amp; Foundations</span>
+</div>
+</div>
+</div>
+<a class="inline-flex items-center justify-between text-primary font-label-md text-label-md hover:text-primary-container transition-colors pt-2" href="assets/certificates/programming_advices/course%201.pdf" rel="noopener noreferrer" target="_blank">
+<span>View Certificate</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+<!-- Cert 4 -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold">Programming Advice — Course 2</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">C++, Algorithms &amp; Foundations</span>
+</div>
+</div>
+</div>
+<a class="inline-flex items-center justify-between text-primary font-label-md text-label-md hover:text-primary-container transition-colors pt-2" href="assets/certificates/programming_advices/course%202.pdf" rel="noopener noreferrer" target="_blank">
+<span>View Certificate</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+<!-- Cert 5 -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold">Programming Advice — Course 3</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">C++, Algorithms &amp; Foundations</span>
+</div>
+</div>
+</div>
+<a class="inline-flex items-center justify-between text-primary font-label-md text-label-md hover:text-primary-container transition-colors pt-2" href="assets/certificates/programming_advices/course%203.pdf" rel="noopener noreferrer" target="_blank">
+<span>View Certificate</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+<!-- Cert 6 -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold">Programming Advice — Course 4</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">C++, Algorithms &amp; Foundations</span>
+</div>
+</div>
+</div>
+<a class="inline-flex items-center justify-between text-primary font-label-md text-label-md hover:text-primary-container transition-colors pt-2" href="assets/certificates/programming_advices/course%204.pdf" rel="noopener noreferrer" target="_blank">
+<span>View Certificate</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. CONTACT SECTION (#contact) - STRICTLY NO CONTACT FORM -->
+<section class="w-full py-space-2xl scroll-mt-20" id="contact">
+<div class="p-space-xl md:p-space-2xl rounded-3xl bg-gradient-to-br from-surface-container-lowest via-surface-container-low/50 to-surface-container-lowest shadow-[0_8px_36px_rgba(15,23,42,0.06)] flex flex-col items-center text-center gap-space-lg relative overflow-hidden">
+<div class="absolute -top-24 -left-24 w-80 h-80 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -right-24 w-80 h-80 bg-tertiary-fixed/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col items-center gap-2 max-w-2xl relative z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+            Direct Channel
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Let's Connect &amp; Build Something Great</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Whether you have an upcoming mobile project, an internship opportunity, or are seeking a passionate Flutter developer to scale your engineering team, feel free to reach out directly through any platform below.
+          </p>
+</div>
+<!-- Direct Clickable Badges and Social Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md w-full max-w-4xl relative z-10">
+<!-- Email Card -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col items-center justify-between gap-space-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 rounded-xl bg-primary-container/10 flex items-center justify-center text-primary-container group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">mail</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold">Email</span>
+<span class="font-code-snippet text-[12px] text-on-surface-variant break-all">israaamustafa1@gmail.com</span>
+</div>
+<div class="flex items-center gap-2 w-full pt-1">
+<a class="flex-1 py-1.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm text-center font-medium hover:bg-primary transition-colors" href="mailto:israaamustafa1@gmail.com">
+                Send Mail
+              </a>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant transition-colors" onclick="navigator.clipboard.writeText('israaamustafa1@gmail.com'); alert('Email address copied to clipboard!');" title="Copy Email" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- WhatsApp Card -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col items-center justify-between gap-space-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 rounded-xl bg-[#25D366]/10 flex items-center justify-center text-[#128C7E] group-hover:scale-110 transition-transform">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+<path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.993.589 1.782.915 2.796.915 3.179 0 5.767-2.587 5.767-5.766.001-3.187-2.575-5.77-5.767-5.77zm6.958 5.766c-.001 3.834-3.125 6.958-6.958 6.958-1.198 0-2.34-.318-3.344-.881l-3.722.976.993-3.626c-.637-1.042-.995-2.253-.995-3.427.001-3.833 3.126-6.957 6.958-6.957 3.832 0 6.968 3.124 6.968 6.957z"></path>
+</svg>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold">WhatsApp</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Instant Messaging</span>
+</div>
+<a class="w-full py-1.5 rounded-full bg-[#25D366]/15 hover:bg-[#25D366]/25 text-[#128C7E] font-label-sm text-label-sm text-center font-medium transition-colors" href="https://wa.me/201019151724" rel="noopener noreferrer" target="_blank">
+              Chat Directly
+            </a>
+</div>
+<!-- LinkedIn Card -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col items-center justify-between gap-space-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold">LinkedIn</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Professional Profile</span>
+</div>
+<a class="w-full py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm text-center font-medium transition-colors" href="https://www.linkedin.com/in/israa-mustafa1" rel="noopener noreferrer" target="_blank">
+              Connect on LinkedIn
+            </a>
+</div>
+<!-- GitHub Card -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col items-center justify-between gap-space-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-on-surface group-hover:scale-110 transition-transform">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold">GitHub</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Code Repositories</span>
+</div>
+<a class="w-full py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm text-center font-medium transition-colors" href="https://github.com/israaamustafa1" rel="noopener noreferrer" target="_blank">
+              Explore GitHub
+            </a>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Video Demo Modal (shared by all "Watch Demo" buttons) -->
+<div class="fixed inset-0 z-[100] hidden items-center justify-center p-gutter-mobile sm:p-gutter" id="video-modal">
+<div class="absolute inset-0 bg-on-surface/70 backdrop-blur-sm" id="video-modal-backdrop"></div>
+<div class="relative w-full max-w-2xl bg-surface-container-lowest rounded-3xl shadow-[0_24px_48px_-12px_rgba(2,86,155,0.25)] overflow-hidden">
+<div class="flex items-center justify-between px-space-md py-space-sm border-b border-outline-variant/30">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate pr-space-sm" id="video-modal-title">Project Demo</h3>
+<button aria-label="Close video" class="w-9 h-9 flex-shrink-0 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-colors" id="video-modal-close" type="button"><span class="material-symbols-outlined text-[20px]">close</span></button>
+</div>
+<div class="bg-black">
+<video class="w-full max-h-[70vh]" controls="" id="video-modal-player" playsinline=""></video>
+</div>
+</div>
+</div>
+<script src="js/main.js"></script></main><footer class="w-full bg-surface-container-lowest mt-space-2xl shadow-[0_-1px_16px_rgba(15,23,42,0.03)]"><div class="max-w-[1200px] mx-auto px-gutter py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col items-center md:items-start gap-space-xs"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary-container"></span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wide uppercase">Built with Flutter-inspired precision &amp; passion</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">© 2026 Israa Mostafa. All rights reserved.</p></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-code-snippet text-code-snippet px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant font-medium">Flutter 3.x</span><span class="font-code-snippet text-code-snippet px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant font-medium">Dart SDK</span></div><a aria-label="Back to Top" class="w-11 h-11 rounded-full bg-surface-container-low hover:bg-primary-container hover:text-on-primary text-primary flex items-center justify-center shadow-[0_4px_16px_rgba(15,23,42,0.06)] hover:shadow-[0_8px_24px_rgba(1,117,194,0.25)] transition-all duration-300" href="#"><span class="material-symbols-outlined text-[20px]">arrow_upward</span></a></div></div></footer></body></html>
